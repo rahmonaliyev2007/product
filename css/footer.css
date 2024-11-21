@@ -1,0 +1,198 @@
+footer{
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 30px;
+}
+
+.f-top{
+    font-family: "Poppins", serif;
+    padding: 150px 0;
+}
+.f-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(2, 137, 122, 1);
+    
+}
+.f-text {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+    
+    p{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    color: white;
+    font-family: "Poppins", serif;
+    }
+
+}
+.f-top-button{
+    padding: 15px 35px;
+    font-family: "Poppins", serif;
+    color: rgba(2, 137, 122, 1);
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.f-img{
+    width: 50%;
+}
+/* ---------------------------------------------------------------------------------------------------------- */
+
+
+.f-card-title{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.f-card-gr{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.f-link{
+    display: block;
+    margin: 10px 0;
+    font-family: "Poppins", serif;
+    color: black;
+}
+.f-link:hover{
+    color: rgba(2, 137, 122, 1);
+}
+.f-bottom{
+    font-family: "Poppins", serif;
+    text-align: center;
+    font-size: 10px;
+    margin: 20px auto;
+    background-color: rgb(241, 241, 241);
+}
+.f-input{
+    padding: 15px 20px;
+    display: block;
+    width: 80%;
+    border-radius: 8px;
+    border:  1px solid white;
+    background-color: white;
+    margin: 15px 0;
+}
+.f-m-button{
+    padding: 10px 35px;
+    border-radius: 7px;
+    border: 1px solid rgba(2, 137, 122, 1);
+    background-color: rgba(2, 137, 122, 1);
+    font-size: 14px;
+    font-family: "Poppins", serif;
+    color: white;
+    font-weight: 500;
+
+
+}
+/* =======================================      Media    ==================================== */
+
+
+@media screen and (max-width:1200px) {
+    .f-text p{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .f-top-button{
+        padding: 10px 30px;
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width:900px){
+    .f-top{
+        padding: 25px 0;
+    }
+    .f-box{
+        width: 90%;
+        margin: auto;
+    }
+
+    .f-text p{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .f-top-button{
+        padding: 6px 30px;
+        font-size: 15px;
+    }
+
+    .f-card-gr{
+        grid-template-columns: auto auto;
+    }
+    
+}
+@media screen and (max-width:728px) {
+    .f-card-title{
+        font-size: 15px;
+    }
+    .f-link{
+        font-size: 12px;
+    }
+    .f-m-button{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:578px){
+    .f-box{
+        width: 100%;
+        margin: 20px auto;
+        border-radius: 20px;
+    }
+
+    .f-text p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .f-top-button{
+        padding: 6px 30px;
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width:450px){
+    .f-text p{
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .f-top-button{
+        padding: 5px 15px;
+        font-size: 6px;
+    }
+    .f-link{
+        text-align: center;
+    }
+    .f-card-title{
+        text-align: center;
+    }
+    .f-card-gr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .f-input{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .f-m-button{
+        margin: auto;
+        display: block;
+    }
+}

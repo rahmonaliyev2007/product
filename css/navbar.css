@@ -1,0 +1,274 @@
+
+
+/* ==================================== ====================== ============= =========== ============== ========== */
+
+
+header {
+    font-family: "Poppins", sans-serif !important;
+    .navbar {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        z-index: 500;
+        min-width: 320px;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+
+
+            .logo {
+                padding: 5px ;
+                letter-spacing: 1px;
+                font-weight: 700;
+                color: black;
+                font-size: 20px;
+                line-height: 21px;
+                cursor: pointer;
+                font-family: "Ribeye", serif !important;
+                align-items: center;
+                display: flex;
+                font-size: 30px;
+                font-family: "Poppins", sans-serif !important;
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+
+                li a {
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: black;
+                    padding:0 12px;
+                    min-width: 89px;
+                    font-weight: 300;
+                    font-family: "Poppins", sans-serif;
+                    /* border: 1px solid red; */
+                }
+
+                li:hover a {
+                    font-weight: 600;
+                }
+            }
+
+            .dark-icon{
+                margin-left: 25px;
+                cursor: pointer;
+            }
+            .dark-icon:hover{
+                scale: 1.4;
+            }
+            .navbar-menu {
+                display: none;
+                height: 40px;
+                transition: height 1s ease;  
+                min-width: 120px; 
+                margin-left: 15px;
+            }
+
+            .button-nav{
+                button{
+                font-size: 16px;
+                line-height: 24px;
+                padding: 10px 35px;
+                border: 1px solid rgba(188, 208, 229, 1);
+                border-radius: 5px;
+                background-color: transparent;
+                font-weight: 500;
+                color: black;
+                font-family: "Poppins", sans-serif;
+                cursor: pointer;
+                }
+
+                button:last-of-type{
+                    background-color: rgba(2, 137, 122, 1);
+                    color: white;
+                }
+                button:last-of-type:hover{
+                    background-color: rgba(38, 148, 153, 0.5);
+                    color: black;
+                    border-color: rgba(2, 137, 122, 1);
+                }
+                button:hover{
+                    background-color: rgba(2, 137, 122, 0.5);
+                    border-color: rgba(2, 137, 122, 1);
+                }
+                button:hover + button:last-of-type{
+                    background-color: transparent;
+                    color: black;
+                }
+            }
+        
+        }
+
+        .navbar-menu {
+            .knopka {
+                padding: 0;
+                color: black;
+                cursor: pointer;
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+            .button-nav-mobile{
+                font-size: 14px;
+                padding: 10px 35px;
+                border: 1px solid rgba(2, 137, 122, 1);
+                border-radius: 5px;
+                background-color: transparent;
+                color: black; 
+                transform: translateY(-5px);  
+                font-family: "Poppins", sans-serif;
+                cursor: pointer;
+            }
+            .button-nav-mobile:last-of-type{
+                background-color: rgba(2, 137, 122, 1);
+                color: white;
+            }
+            .navbar576 {
+                padding-top: 10vh;
+                display: block;
+                background: rgba(38, 148, 153, 0.5);
+                backdrop-filter: blur(10px);
+                position: fixed;
+                width: 100%;
+                /* height: 100vh; */
+                top: 0;
+                right: 0;
+                
+            }
+
+            .navbar576 a {
+                color: white ;
+                display: block;
+                text-align: center;
+                padding: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+
+            .navbar576 a:hover {
+                background-color: rgba(38, 148, 153, 0.9);
+            }
+
+            .navbar_close {
+                position: absolute;
+                top: 20px;
+                right: 10px;
+                background-color: transparent;
+                border-radius: 5px;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 30px;
+                padding: 5px 20px;
+                font-family: "Poppins", sans-serif !important;
+            }
+
+            #knopka:checked~.navbar576 {
+                display: block;
+            }
+
+            #knopka:not(:checked)~.navbar576 {
+                display: none;
+            }
+        }
+    }
+
+    .navbar.scrolled {
+        background-color: rgba(38, 148, 153, 0.3);
+        transition: 1s ;
+        backdrop-filter: blur(35px);
+      }
+
+}
+
+
+
+
+
+/* ========================================================== ======================  ======================== ======== */
+
+@media screen and (max-width:740px) {
+    header{
+        .navbar{
+            nav{
+                .button-nav{
+                    padding: 10px ;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    header .navbar nav .navbar-menu {
+        display: inline-block;
+        transition: height 1s ease , display 1s ease-out;
+    }
+
+    header .navbar{
+        padding: 0 !important;
+        min-width: 300px;
+    }
+
+    header .navbar nav ul {
+        display: none;
+    }
+
+    header .navbar {
+        padding-top: 20px;
+    }
+
+    header{
+        .navbar{
+            nav{
+                .button-nav{
+                    display: none;
+                }
+            }
+            .navbar-menu{
+                .button-nav-mobile{
+                    font-size: 14px;
+                    padding: 10px 15px;
+                }
+            }
+        }
+        
+        
+    }
+}
+
+@media screen and (max-width:740px){
+    header{
+        .navbar{
+            .navbar-menu{
+                .button-nav-mobile{
+                    font-size: 10px;
+                    padding: 7px 15px;
+                }
+            }
+        }
+        
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    header{
+        .navbar{
+            .navbar-menu{
+                .button-nav-mobile:first-of-type{
+                    display: none;
+                }
+            }
+        }
+        
+    }
+}

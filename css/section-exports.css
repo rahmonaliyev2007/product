@@ -1,0 +1,202 @@
+.se{
+    background-color: rgb(241, 241, 241);
+    border-radius: 40% 40% 0 0;
+    overflow: hidden;
+    padding-top: 55px;
+    margin-top: 150px;
+}
+.se-title{
+    font-family: "Poppins", serif;
+    font-weight:bold ;
+    font-size: 32px;
+    line-height: 48px;
+    color: rgba(34, 52, 61, 1);
+    text-align: center;
+}
+.se-p{
+    font-family: "Poppins", serif;
+    margin: 15px auto 30px;
+    max-width: 550px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+}
+.se-gr{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px 100px;
+    
+}
+.se-card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.se-card .se-img{
+    border-radius: 50%;
+    max-width: 100px;
+    border: 3px solid red;
+}
+
+.se-card:nth-child(2) .se-img{
+    border-color: rgba(116, 10, 118, 1);
+}
+.se-card:nth-of-type(3) .se-img{
+    border-color: rgba(2, 137, 122, 1);
+}
+.se-card:nth-of-type(4) .se-img{
+    border-color: rgba(3, 91, 129, 1);
+}
+
+
+
+
+/* ===================== */
+
+
+
+
+.se-message{
+    background-color: white;
+    padding: 15px 25px 20px;
+    border-radius: 50px;
+    box-shadow:0 2px 8px 0 rgba(86, 117, 146, 0.1);
+    position: relative;
+
+    p{
+        font-family: "Poppins", serif;
+        font-weight:500 ;
+        line-height: 24px;
+        font-size: 16px;
+        color: rgba(47, 40, 30, 1);
+    }
+}
+
+
+.se-message-add{
+    width: 20px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    border-radius: 0 0 50px 50px;
+    box-shadow:0 2px 8px 0 rgba(86, 117, 146, 0.1);
+}
+
+.se-message-add-right{
+    width: 20px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    right: 30px;
+    border-radius: 0 0 50px 50px;
+    box-shadow:0 2px 8px 0 rgba(86, 117, 146, 0.1);
+}
+.se-message-circle{
+    box-shadow:0 2px 8px 0 rgba(86, 117, 146, 0.1);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.se-message-circle-r{
+    box-shadow:0 2px 8px 0 rgba(86, 117, 146, 0.1);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    top: 10px;
+    left: 90%;
+}
+
+.se-button{
+    padding: 15px 30px;
+    background-color: rgba(2, 137, 122, 1);
+    border: 1px solid rgba(2, 137, 122, 1);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Poppins", serif;
+    display: block;
+    margin: 60px auto 150px;
+    cursor: pointer;
+    
+
+}
+
+@media screen and (max-width:950px) {
+    .se-title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .se-p{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .se{
+        border-radius: 20% 20% 0 0;
+    }
+    .se-card .se-img{
+        max-width: 70px;
+    }
+    .se-message p{
+        font-size: 12px;
+    }
+    .se-message{
+        padding: 5px 15px;
+    }
+    .se-button{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:728px) {
+    .se-gr{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .se{
+        border-radius: 10% 10% 0 0;
+    }
+}
+@media screen and (max-width:578px) {
+    .se{
+        border-radius: 5% 5% 0 0;
+    }   
+    .se-button{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .se-title{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .se-p{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .se-card .se-img{
+        max-width: 50px;
+    }
+    .se-message p{
+        font-size: 10px;
+    }
+    .se-button{
+        font-size: 10px;
+    }
+}

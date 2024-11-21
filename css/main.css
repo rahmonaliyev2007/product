@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Gelasio", serif;
+    transition: all 0.2s ease;
+}
+html{
+    min-width: 320px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1260px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.main{
+    background-color: rgb(241, 241, 241);
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    overflow: hidden;
+    padding-bottom: 90px;
+}
+.m-title{
+    font-family: "Poppins", serif;
+    text-align: center;
+    font-size:32px ;
+    font-weight: bold;
+    line-height: 48px;
+    color: rgba(34, 52, 61, 1);
+}
+.m-card-group{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    margin: 65px auto 35px;
+}
+.m-card-title{
+    font-weight:600 ;
+    font-size: 22px;
+    line-height: 33px;
+    color: rgba(34, 52, 61, 1);
+    font-family: "Poppins", serif;
+    margin: 30px 0 15px;
+}
+.m-card-p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(34, 52, 61, 1);
+    width: 80%;
+    font-family: "Poppins", serif;
+}
+.m-button{
+    display: block;
+    margin: auto;
+    padding: 15px 35px;
+    background-color: rgba(2, 137, 122, 1);
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    font-family: "Poppins", serif;
+    text-transform: uppercase;
+    border: 1px solid rgba(2, 137, 122, 1);
+    border-radius: 5px;
+}
+.m-button:hover{
+    background-color: rgba(2, 137, 122, 0.3);
+    color: black;
+}
+
+
+@media screen and (max-width:900px) {
+    .m-card-group{
+        grid-template-columns: auto auto auto;
+    }
+    .main{
+        border-radius: 0 0 20% 20%;
+    }
+    .m-title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .m-card-title{
+        font-size: 20px;
+        line-height: 24px;
+        margin: 15px 0 10px;
+    }
+    .m-card-group{
+        margin-top: 35px;
+    }
+    .m-card-p{
+        font-size:12px ;
+        line-height: 15px;
+    }
+    .m-button{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:728px) {
+    .m-card-group{
+        grid-template-columns: auto auto;
+    }
+    .main{
+        border-radius: 0 0 10% 10%;
+    }
+    .m-title{
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .m-card-title{
+        font-size: 15px;
+        line-height: 18px;
+        margin: 10px 0 5px;
+    }
+    .m-card-group{
+        margin-top: 25px;
+    }
+    .m-card-p{
+        font-size:10px ;
+        line-height: 12px;
+    }
+    .m-button{
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:578px) {
+    .m-card-group{
+        grid-template-columns:  auto;
+        gap: 20px;
+    }
+    .m-card{
+        display: flex;
+        gap: 20px;
+    }
+    .main{
+        border-radius: 0 0 15px 15px;
+        padding-bottom: 30px;
+    }
+}

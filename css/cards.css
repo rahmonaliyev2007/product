@@ -1,0 +1,348 @@
+/* content=================================-------------======================---------------============== */
+
+
+
+
+.card-gr{
+    background-color: rgb(241, 241, 241);
+}
+
+.con-title{
+    font-family: "Poppins", serif;
+    font-weight:bold ;
+    font-size: 34px;
+    line-height:50px ;
+    color: rgba(34, 52, 61, 1);
+    /* margin-top: 150px; */
+}
+.con-p{
+    font-family: "Poppins", serif;
+    font-weight:500 ;
+    font-size: 16px;
+    line-height:26px ;
+    margin: 10px 0 35px;
+    color: rgba(34, 52, 61, 1);
+}
+.con-card-gr{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.con-card{
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgba(222, 222, 222, 1);
+    background-color: transparent;
+}
+.con-img{
+    width: 100%;
+}
+.con-text{
+    padding: 25px 30px;
+}
+.con-card-p{   
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: rgba(34, 52, 61, 1);
+    font-family: "Poppins", serif;
+    b{
+        font-weight: 500;
+        font-family: "Poppins", serif;
+    }
+}
+.con-card-h3{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+}
+.con-card:hover{
+    box-shadow: 0 5px 5px 0 rgba(2, 137, 122, 0.4);
+    border-color: rgba(2, 137, 122, 0.5);
+
+    .con-card-h3{
+        color: rgba(2, 137, 122, 1);
+    }
+    .con-card-p b{
+        color: rgba(2, 137, 122, 1);
+    }
+}
+
+.con-dots{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:60px ;
+    margin: 65px auto 150px;
+}
+.con-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+.con-dot:hover{
+    background-color: rgba(2, 137, 122, 1);
+}
+.con-active{
+    background-color: rgba(2, 137, 122, 0.5);
+}
+
+
+/* Price =================================-------------======================---------------============== */
+
+
+.pr-title{
+    font-weight:700 ;
+    font-size: 34px;
+    line-height: 50px;
+    color:rgba(34, 52, 61, 1) ;
+    font-family: "Poppins", serif;
+    text-align: center;
+}
+.pr-p{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(34, 52, 61, 1);
+    margin: 10px auto 50px;
+}
+.pr-card-gr{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+.pr-card{
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+    padding: 25px 0 30px;
+}
+.pr-card-h3{
+    font-family: "Poppins", serif;
+    font-weight: 700p;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: rgba(34, 52, 61, 1);
+}
+.pr-card-p{
+    font-family: "Poppins", serif;
+    font-weight: 400p;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: rgba(34, 52, 61, 1);
+}
+.pr-price{
+    margin:15px auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    max-width: 50%;
+    h3{
+        font-family: "Poppins", serif;
+        font-weight: 700p;
+        font-size: 76px;
+        line-height: 100px;
+        color: rgba(2, 137, 122, 1);
+    }
+    p{
+        font-family: "Poppins", serif;
+        font-weight: 400p;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(175, 175, 175, 1);
+        b{
+            font-family: "Poppins", serif;
+            display: block;
+            font-weight: 700p;
+            font-size: 24px;
+            line-height: 30px;
+            color: rgba(2, 137, 122, 1);
+        }
+    }
+}
+
+.pr-futures{
+    font-family: "Poppins", serif;
+    font-weight: 500p;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(34, 52, 61, 1);
+    margin-bottom: 15px;
+    text-align: center;
+}
+.pr-button{
+    font-family: "Poppins", serif;
+    display: block;
+    margin: auto;
+    font-size: 18px;
+    font-weight:400 ;
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 20px;
+    border: 1px solid rgba(2, 137, 122, 1);
+    background-color: rgba(2, 137, 122, 1);
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+/* hover ------------- */
+
+.pr-card:hover{
+    background-color: rgba(2, 137, 122, 1);
+    border-color: rgba(2, 137, 122, 1);
+    box-shadow: 0 2px 8px 0 rgba(2, 137, 122, 0.8);
+    
+    .pr-card-h3, .pr-card-p, .pr-price h3, p b , .pr-futures{
+        color: white;
+    }
+    .pr-button{
+        background-color: white;
+        color: rgba(2, 137, 122, 1);
+
+    }
+}
+/* Clients =================================-------------======================---------------============== */
+.cl{
+    padding-top: 50px;
+}
+.cl-card{
+    padding: 30px 30px 25px ;
+}
+.cl-text{
+    font-family: "Poppins", serif;
+    font-weight: 400p;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(115, 115, 115, 1);
+    margin: 15px 0;
+}
+.cl-pr{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.cl-b{
+    font-family: "Poppins", serif;
+    font-weight: 600p;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(2, 137, 122, 1);
+
+    span{
+        font-family: "Poppins", serif;
+        font-size: 12px;
+        font-weight: 200px;
+        line-height: 24px;
+        color: rgba(37, 43, 66, 1);
+        display: block;
+    }
+}
+/* content=================================-------------======================---------------============== */
+/* content=================================-------------======================---------------============== */
+/* content=================================-------------======================---------------============== */
+
+@media screen and (max-width:900px) {
+    .con-card-h3{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .con-card-p{
+        font-size: 10px;
+        line-height: 12px;
+
+    }
+    .con-text{
+        padding: 20px;
+    }
+    .con-title{
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .con-p{
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .con-dots{
+        margin-bottom: 50px;
+    }
+
+    /* -------------------------------------------------- */
+
+
+    .pr-title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .pr-p{
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 20px;
+    }
+    .pr-card-h3{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .pr-card-p{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .pr-price{
+        max-width: 60%;
+        margin: 0 auto 5px;
+        
+        h3{
+            font-size: 50px;
+            line-height: 70px;
+        }
+        p{
+            font-size: 12px;
+            b{
+                font-size: 15px;
+            }
+        }
+    }
+    .pr-futures{
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .pr-button{
+        font-size: 14px;
+    }
+    /* ------------------------ */
+
+    .cl-text{
+        font-size: 13px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width:728px){
+    .con-card-gr{
+        grid-template-columns: auto auto;
+    }
+    .pr-card-gr{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:578px){
+    .con-card-gr{
+        grid-template-columns:  auto;
+        padding: 0;
+    }
+    .pr-card-gr{
+        grid-template-columns:  auto;
+        padding: 0 30px;
+    }
+    .pr-price{
+        max-width: 30%;
+    }
+}
